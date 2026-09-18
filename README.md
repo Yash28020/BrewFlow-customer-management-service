@@ -1,6 +1,6 @@
 <div align="center">
 
-# ☕ BrewCo CRM
+# ☕ BrewFlow CRM
 
 ### An AI-powered, microservice-backed CRM platform — customer segmentation, churn prediction, RFM clustering, natural-language analytics, and AI-assisted campaigns, all behind JWT-secured REST APIs.
 
@@ -50,7 +50,7 @@
 
 ## 🧭 Overview
 
-BrewCo CRM is a full-stack customer relationship management platform built for a fictional coffee brand — but engineered the way a real production CRM would be: a **decoupled delivery microservice** instead of sending messages inline, an **ML scoring layer** that runs independently of the request path, an **LLM-to-SQL pipeline with a hand-built safety guard** rather than trusting model output blindly, and **JWT verification against a live JWKS endpoint** rather than a shared secret.
+BrewFlow CRM is a full-stack customer relationship management platform built for a fictional coffee brand — but engineered the way a real production CRM would be: a **decoupled delivery microservice** instead of sending messages inline, an **ML scoring layer** that runs independently of the request path, an **LLM-to-SQL pipeline with a hand-built safety guard** rather than trusting model output blindly, and **JWT verification against a live JWKS endpoint** rather than a shared secret.
 
 At its core it answers three questions a coffee brand actually has:
 - *Who are my customers, really?* → RFM clustering discovers behavioral segments automatically
