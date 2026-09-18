@@ -509,6 +509,6 @@ VITE_CLERK_PUBLISHABLE_KEY=
 
 <div align="center">
 
-Built by **Debasish Kumar** — B.Tech CSE | Full Stack Developer
+Built by *Yash Pratap Singh * — B.Tech CSE | AI/ML Engineer
 
 </div>
