@@ -510,6 +510,6 @@ Campaign history table alongside the create-campaign panel with segment and chan
 <div align="center">
 
 **BrewFlow** — Customer Management Service
-Built by **Debasish Kumar** — B.Tech CSE | Full Stack Developer
+Built by **Yash Pratap Singh** — B.Tech CSE | AI/ML Engineer
 
 </div>
