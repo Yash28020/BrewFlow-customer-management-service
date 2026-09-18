@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 44% 96%;
+    --foreground: 24 45% 14%;
+    --card: 36 58% 98%;
+    --card-foreground: 24 45% 14%;
+    --popover: 36 58% 98%;
+    --popover-foreground: 24 45% 14%;
+    --primary: 27 44% 20%;
+    --primary-foreground: 35 65% 96%;
+    --secondary: 34 69% 88%;
+    --secondary-foreground: 24 45% 18%;
+    --muted: 34 31% 90%;
+    --muted-foreground: 25 18% 42%;
+    --accent: 34 61% 48%;
+    --accent-foreground: 35 65% 96%;
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 35 65% 96%;
+    --border: 31 24% 84%;
+    --input: 31 24% 84%;
+    --ring: 34 61% 48%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html,
+  body,
+  #root {
+    min-height: 100%;
+    background: hsl(var(--background));
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    margin: 0;
+  }
+}
+
+@layer utilities {
+  @keyframes dashboard-enter {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .dashboard-enter {
+    animation: dashboard-enter 520ms ease-out both;
+  }
+
+  .dashboard-hover {
+    transition: border-color 180ms ease-in-out, box-shadow 180ms ease-in-out, background-color 180ms ease-in-out, transform 180ms ease-in-out;
+  }
+
+  .dashboard-hover:hover {
+    box-shadow: 0 14px 32px rgba(45, 26, 18, 0.10);
+  }
+
+  .scroll-container {
+    scrollbar-width: thin;
+    scrollbar-color: #c8852e transparent;
+  }
+
+  .scroll-container::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scroll-container::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scroll-container::-webkit-scrollbar-thumb {
+    background: #c8852e;
+    border-radius: 4px;
+  }
+
+  .row--selected {
+    background-color: #f0e8d8 !important;
+  }
+
+  .row--selected:hover {
+    background-color: #f0e8d8 !important;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .dashboard-enter {
+      animation: none;
+    }
+
+    .dashboard-hover,
+    .dashboard-hover:hover {
+      transition: none;
+      transform: none;
+    }
+  }
+}
